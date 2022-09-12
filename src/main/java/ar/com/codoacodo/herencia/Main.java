@@ -10,7 +10,9 @@ public class Main {
 		//miBuscador.ClaveBusqueda=claveDelUsuario;
 		miBuscador.buscar();
 		miBuscador.cantidadResultados();
+		//Articulo [] resultados = new Articulo [] {};
 		miBuscador.mostrarResultados();
+		
 		
 
 	}

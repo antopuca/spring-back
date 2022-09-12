@@ -18,13 +18,17 @@ public class Articulo {
 	}
 
 	public void setImg(String img) {
+		if(img != null )
 		this.img = img;
+		else System.out.println("MARCA DE AGUA");
 	}
 
 	public String getTitulo() {
-		return titulo;
+		//if(this.titulo !=null)
+			//this.titulo.toUpperCase();
+		//return this.titulo;
+		return this.titulo!= null? this.titulo.toUpperCase():this.titulo;// operador ternario
 	}
-
 	public void setTitulo(String titulo) {
 		this.titulo = titulo;
 	}
@@ -44,6 +48,13 @@ public class Articulo {
 	public void setPrecio(float precio) {
 		this.precio = precio;
 	}
+
+	@Override
+	public String toString() {
+		return "Articulo [img=" + img + ", titulo=" + titulo + ", autor=" + autor + ", precio=" + precio + "]";
+	}
+
+	
 	
 	
 	
